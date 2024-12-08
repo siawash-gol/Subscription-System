@@ -13,7 +13,7 @@ schema_view = get_schema_view(
         title="Subscription system API",
         default_version='v1',
         description="This is for all client of subscription system",
-        terms_of_service="https://www.AcaDrive.com/policies/terms/",
+        terms_of_service="https://www.Subscription-system.com/policies/terms/",
         contact=openapi.Contact(email="testemail@example.com"),
         license=openapi.License(name="Subscription system License"),
     ),
