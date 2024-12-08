@@ -10,12 +10,12 @@ from django.conf import settings
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Aca Drive API",
+        title="Subscription system API",
         default_version='v1',
-        description="This is for all client of Aca Drive",
+        description="This is for all client of subscription system",
         terms_of_service="https://www.AcaDrive.com/policies/terms/",
-        contact=openapi.Contact(email="acadrive.ca@gmail.com"),
-        license=openapi.License(name="ACADrive License"),
+        contact=openapi.Contact(email="testemail@example.com"),
+        license=openapi.License(name="Subscription system License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
@@ -34,9 +34,6 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-admin.site.site_title = "Aca Drive"
-admin.site.index_title = "Aca Drive"
-admin.site.site_header = "Aca Drive"
 
 handler404 = 'config.utils.views.error_404'
 handler500 = 'config.utils.views.error_500'
