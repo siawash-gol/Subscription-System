@@ -7,7 +7,7 @@ from config.apps.ClientHub.views.pricing_views import (
 urlpatterns = [
     # PayPal Payment Routes
     path(
-        'payment/paypal/create/<slug:sluhg>',
+        'payment/paypal/create/<slug:slug>',
         CreatePaymentRequestView.as_view(),
         name='create_paypal_payment',
     ),
