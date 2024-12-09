@@ -8,6 +8,7 @@
   Payment Integration: Supports PayPal for secure and reliable payments.</br>
   API-Driven Architecture: Fully RESTful APIs for seamless integration with other systems.</br>
   Security Measures: JWT-based authentication and email verification to ensure user data  safety.</br>
+  Implementing expiration date control and deactivating expired subscriptions with celery and celery-beat</br>
 
 
 # Requirements
